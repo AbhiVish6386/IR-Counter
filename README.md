@@ -21,59 +21,42 @@ A simple yet effective object counter using **ESP32** and **IR Obstacle Avoidanc
 | Mini Push Button (Momentary) | For reset functionality       |
 
 
-
+---
 
 ## 📂 VScode Folder Structure
 
+```
 IR Counter/
-
 ├── .pio/                  # PlatformIO build system
-
 ├── include/               # Header files
-
 ├── lib/                   # Custom libraries (if extended)
-
 ├── src/                   # Main source code
-
 │   ├── main.cpp
-
 │   ├── Button.cpp
-
 |   |── Button.h
-
 │   ├── car_frames.cpp
-
 |   ├── car_frames.h
-
 |   ├── u8g2_oledPrint.cpp
-
 │   └── u8g2_oledPrint.h
-
 ├── test 
-
 ├── platformio.ini         # Project configuration
-
 └── .gitignore
-
+```
 
 
 ## ⚙️ PlatformIO Configuration
 
+```ini
 [env:esp32doit-devkit-v1]
-
 platform = espressif32
-
 board = esp32doit-devkit-v1
-
 framework = arduino
-
 monitor_speed = 115200
-
 upload_port = COM3
-
 monitor_port = COM3
 lib_deps =
 	olikraus/U8g2 @ ^2.36.5
+```
 
 ## 🔁 How It Works
 
